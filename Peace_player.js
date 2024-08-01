@@ -325,11 +325,13 @@ progressContainer.addEventListener('click', (e) => {
 });
 
 progressContainer.addEventListener('touchstart', (e) => {
-  const touch = e.touches[0];
+  e.preventDefault(); 
+  const touch = e.touches[0]; 
   const width = progressContainer.clientWidth;
   const touchX = touch.clientX - progressContainer.getBoundingClientRect().left;
   const duration = audio.duration;
-  
+
+  // Calculate and set the new current time
   audio.currentTime = (touchX / width) * duration;
 });
 
