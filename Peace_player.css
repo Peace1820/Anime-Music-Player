@@ -350,43 +350,43 @@
     fill: #ff0000;
   }
   
-  @media (max-width: 700px) {
+    @media (max-width: 700px) {
     .player {
-      width: 400px;
+      width: 400px; 
       max-width: 300px; 
       margin-left: 0.1rem;
       padding: 10px; 
     }
   
     .player {
-      height: 370px;
+      height: 400px;
       
     }
 
     .playlist{
       width: 300px;
-      margin-top: 0.5rem;
+      margin-top: 0.3rem;
     }
     
-     #player-album-art {
-    width: 279px; 
-    height: 200px; 
-    margin: 0 auto;
-    border: orange 1px solid;
-    margin-top: 0.1rem;
-
-    object-fit: cover;
-    object-position: center;
+    #player-album-art {
+      width: 279px; 
+      height: 200px; 
+      margin: 0 auto;
+      border: orange 1px solid;
+      margin-top: 0.1rem;
+      margin-bottom: 1.58rem;
+      object-fit: cover;
+      object-position: center;
      }
 
      .player-content {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column; 
-      align-items: center;
-      justify-content: center;
-      column-gap: 0; 
+        width: 100%;
+        height: auto; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0; 
       
      }
 
@@ -448,6 +448,71 @@
       
 
     }
+
+    .playlist-song-duration {
+      font-size: 0.725rem;
+      padding-right: 2.1rem;
+      font-family: var(--font-headline);
+      width: 30px;
+    }
+
+
+    #player-song-artist {
+      margin: 0;
+      padding: 0;
+    }
+
+    #player-song-title {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .playlist-song-duration > button {
+      padding: 0;
+    }
+  
+    .player-content {
+      display: inline;
+      position: relative;
+      justify-items: center;
+      height: 200px;
+    }
+  
+  
+    .player-display-song-artist {
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+    }
+
+    .player-display {
+      width: 100%; 
+      height:100px; 
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: none;
+      margin-left: 0.3rem;
+      z-index: 0;
+    }
+  
+    .player-display-song-artist {
+      height: auto; 
+      padding-top: 5rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .player-buttons {
+    
+      padding-bottom: 7.2rem;
+      padding-top: 0;
+      justify-content: center; 
+    
+     
+    }
+  }
 
     .playlist-song-duration {
       font-size: 0.725rem;
