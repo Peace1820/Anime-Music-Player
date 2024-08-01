@@ -324,6 +324,15 @@ progressContainer.addEventListener('click', (e) => {
   audio.currentTime = (clickX / width) * duration;
 });
 
+progressContainer.addEventListener('touchstart', (e) => {
+  const touch = e.touches[0];
+  const width = progressContainer.clientWidth;
+  const touchX = touch.clientX - progressContainer.getBoundingClientRect().left;
+  const duration = audio.duration;
+  
+  audio.currentTime = (touchX / width) * duration;
+});
+
 const sortSongs = () => {
   userData?.songs.sort((a,b) => {
     if (a.title < b.title) {
