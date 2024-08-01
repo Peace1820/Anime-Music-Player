@@ -203,7 +203,7 @@
   .playlist-song:focus {
     outline-style: dashed;
     outline-width: 2px;
-    padding: 5px;
+    
     
   }
   
@@ -370,7 +370,7 @@
     }
     
      #player-album-art {
-    width: 295px; /* Adjust width for mobile */
+    width: 279px; /* Adjust width for mobile */
     height: 200px; /* Adjust height for mobile */
     margin: 0 auto;
     border: orange 1px solid;
